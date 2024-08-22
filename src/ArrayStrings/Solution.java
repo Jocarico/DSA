@@ -8,6 +8,9 @@ class Solution {
             if (Math.abs(num) < Math.abs(closest)){
                 closest = num;
             }
+            else if (Math.abs(num) == Math.abs(closest) && num > closest){
+                closest = num;
+            }
         }
         return closest;
     }
